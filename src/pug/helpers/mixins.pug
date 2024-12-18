@@ -3,7 +3,7 @@
 mixin menu(logo='logo.png', place_of='header', href_btn='#', buttonClass='',burger="")
     div(class=place_of + "-menu")
         div(class=place_of + "-menu__logo")
-            img(class=place_of + '-menu__logo-img' src="../img/" + logo, alt="Logo of MISOCIAL")
+            img(class=place_of + '-menu__logo-img' src="img/" + logo, alt="Logo of MISOCIAL")
         div(class=place_of + "-menu__menu")
             nav(class=place_of + "__nav-menu")
                 a(class=place_of+"__nav-menu__link" href="#") Home
@@ -38,7 +38,7 @@ mixin button(btn_text="button",url="#",active="True")
 
 mixin card(img="",img_alt="", format="personal", price="0", period="month", about="Lorem ipsum dolor sit amet.sed do eiusmod tempor incididunt ut.Labore et dolore magna aliqua.quis nostrud exercitation ullamco laboris.Ea commodo consequat.",butn_text="button",link="#",btn_active="True")
     figure(class="card")
-        img(class="card__image" src="../img/" + img, alt=""+img_alt)
+        img(class="card__image" src="img/" + img, alt=""+img_alt)
         figcaption(class="card-figcaption")
             b(class="card-figcaption__heading") #{format}
             p.card-figcaption__price
