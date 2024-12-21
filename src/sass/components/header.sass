@@ -10,6 +10,28 @@
     background-size: cover
     background-position: center
     //&__nav-menu
+    &__button
+        display: flex
+        justify-content: center
+        filter: drop-shadow(0 0 20px rgba(204,204,223,0.6))
+        transition: .5s
+        &-scrole
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 64px
+            height: 64px
+            background-color: $light-color
+            border-radius: 100px
+            margin-bottom: 50px
+            
+            svg
+                
+                stroke: #bcbcba
+                width: 35px
+                height: 30px
+        &:hover
+            filter: drop-shadow(0 0 20px #cfedff)
     &-content.wrapper
         +media(768)
             padding: 0
@@ -59,11 +81,19 @@
                 gap: 15px
             +media(320)
                 display: none
-        &__logo-img
-            width: 200px
-            +media(920)
-                width: 244px
-                height: 51px
+        &__logo
+            position: relative
+            &-img
+                width: 200px
+                +media(920)
+                    width: 244px
+                    height: 51px
+                &-box 
+                    position: absolute
+                    left: 0
+                    top: 0
+                    width: 100%
+                    height: 100%
         &__button--primary
             padding: 15px 30px
             border: 1px solid $light-color
@@ -76,6 +106,8 @@
             font-family: "Maven Pro"
         &__button--primary:hover
             background-color: rgba(255, 255, 255, 0.5 )
+.scrole-finish
+    padding-bottom: 50px
 .burger-menu
     +media(1024)
         display: none
